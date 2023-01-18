@@ -8,7 +8,7 @@ bool verification(double entree, int borne_inferieur, int borne_superieur ){
 
 int main()
 {
-std::cout << verification(1001, 0, 1000);
+
 double montant_pretee {-1}, repaie_mois{-1}, taux_annuel{-1}; 
 while (!(verification(montant_pretee, 0, INFINITY))) {
     std::cout << "Quel est la somme d'argent pretee? ";

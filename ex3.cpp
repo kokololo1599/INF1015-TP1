@@ -1,21 +1,26 @@
 #include <iostream>
 #include <cmath>
 const double GRAVITE = 9.811;
+bool verification(double entree, int borne_inferieur, int borne_superieur ){
+    // verifie la validite de l'entree
+    if (borne_inferieur<entree && entree < borne_superieur) return true;
+    else return false;
+}
 int main(){
     double hauteur_initial{-1};
     int nb_rebonds{-1};
     double coef_rebond{-1};
     double nouveau_hauteur{-1};
 
-    while (hauteur_initial <= 0){
+    while (!(verification(hauteur_initial, 0, INFINITY))){
         std::cout << "Quel est la hauteur initiale (en m)? ";
         std::cin >> hauteur_initial;
     }
-    while(nb_rebonds <= 0){
+    while(!(verification(nb_rebonds, 0, INFINITY))){
         std::cout << "Combien de rebonds? ";
         std::cin >> nb_rebonds;
     }
-    while (coef_rebond< 0 || coef_rebond>1) {
+    while (!(verification(coef_rebond, 0, 1))) {
         std::cout << "Quel est le coefficient de rebond? ";
         std::cin >> coef_rebond;
     }
