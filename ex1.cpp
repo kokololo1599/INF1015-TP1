@@ -19,7 +19,7 @@ std::cin >> nombre;
 if (est_premier(nombre) == 0)
     std::cout << "Ce nombre est premier.";
 else
-    {std::cout << "Ce nombre n'est premier car il est divisible par" << est_premier(nombre) << ".";}
+    {std::cout << "Ce nombre n'est premier car il est divisible par " << est_premier(nombre) << ".";}
 
 
 
