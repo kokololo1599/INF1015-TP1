@@ -1,32 +1,53 @@
+/**
+* Programme qui place les nombres paires d<un tableau puis le place en permier et ensuite les nombres impaires
+* file  ex5.cpp
+* author Luca Zama et David Vo
+* date   25/01/2022
+*/
 #include <iostream>
 using namespace std;
 
 
-//une fonction qui affiche les nombre pair d'un tableau en premier
+//une fonction qui place les nombre pair en premier dans un nouveau tableau
 
+void placeEvenNumbers(int arr[], int newArr[],int arrLen){
 
-const int arrLen = 10;
-
-void placeEvenNumbers(int arr[]){
-
-
-    for (int i = 0; i < 10; i++) {
+    int indexNewArr = 0;
+    for (int i = 0; i < arrLen; i++) {
         if (arr[i] % 2 == 0) {
-            cout << arr[i] << " ";
+            newArr[indexNewArr] = arr[i];
+            indexNewArr++;
         }
     }
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < arrLen; i++) {
         if (arr[i] % 2 != 0) {
-            cout << arr[i] << " ";
+            newArr[indexNewArr] = arr[i];
+            indexNewArr++;
         }
     }
     
 }
+//print an array from the parameter
+
+void printArray(int arr[], int size){
+    for(int i = 0; i < size; i++) {
+        cout << arr[i]  << " ";
+    }
+}  
 
 int main(){
+    
+    const int size = 10;
+    int numArray[size];
+    cout << "Entrez 10 elements du tableau : ";
+    for (int i=0; i < size; i++){
+        cin >> numArray[i];
+    }
+    int newNumArray[size]; 
+    placeEvenNumbers(numArray, newNumArray, size);
+    cout << "le tableau organise est comme cela: ";
+    
+    printArray(newNumArray, size);
 
-    int numArray[] = {9, 4, 7, 11, 3, 45, 3, 9, 15, 11};
-    cout << "le tableau oragnise est comme cela: ";
-    placeEvenNumbers(numArray);
     return 0;
 }

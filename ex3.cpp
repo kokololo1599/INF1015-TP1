@@ -1,7 +1,13 @@
+/**
+* Programme qui détermine si une année lue du clavier est bissextile.
+* file  ex3.cpp
+* author David Vo
+* date   22/01/2022
+*/
 #include <iostream>
 #include <cmath>
 const double GRAVITE = 9.811;
-bool verification(double entree, int borne_inferieur, int borne_superieur ){
+bool verification(double entree, int borne_inferieur, float borne_superieur ){
     // verifie la validite de l'entree
     if (borne_inferieur<entree && entree < borne_superieur) return true;
     else return false;

@@ -1,7 +1,14 @@
+/**
+* Programme qui détermine si une année lue du clavier est bissextile.
+* file  ex4.cpp
+* author David Vo
+* date   22/01/2022
+*/
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-double generate_rand(){
+#include <iomanip> // for setprecision() and fixed
+double nombre_aleatoire(){
     return ((double)std::rand() / RAND_MAX) * 2 - 1;
 }
 int main(){
@@ -12,17 +19,19 @@ int main(){
     std::cin >> nb_iterations;
 
     for (int i=0; i<nb_iterations; i++) {
-        double x = generate_rand();
-        double y = generate_rand();
+        double x = nombre_aleatoire();
+        double y = nombre_aleatoire();
         if (x*x + y*y <= 1) {
             iterations_cercle++;
         }
     }
-    double pi_approximation = 4.00000000*iterations_cercle/nb_iterations;
+    double pi_approximation = float(4.0000000*iterations_cercle/nb_iterations);
+    // vrai float
     // probabilite du cercle = pi/4
-    
-    std::cout << "Approximation du pi : " <<pi_approximation << "\n";
-    std::cout << "Difference entre l'approximation et la normale : " << (pi_approximation - PI);
+    std::cout<< std::setprecision(6) <<std::fixed ;
+    std::cout << "Approximation du pi : " << pi_approximation << "\n";
+    std::cout << "Ecart relatif entre l'approximation et la normale : " 
+    << std::abs((pi_approximation - PI)/PI) << "%";
     
     
     
