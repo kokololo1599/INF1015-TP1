@@ -6,7 +6,7 @@
 */
 #include <iostream>
 using namespace std;
-
+const int size = 10;
 
 //une fonction qui place les nombre pair en premier dans un nouveau tableau
 
