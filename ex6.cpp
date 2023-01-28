@@ -1,5 +1,5 @@
 /**
-* Programme qui détermine si une année lue du clavier est bissextile.
+* Programme qui lis un fichier .txt et qui imprime le mot le plus long du fichier.
 * file  ex6_2.cpp
 * author Luca Zama et David Vo
 * date   25/01/2022

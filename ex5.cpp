@@ -1,5 +1,5 @@
 /**
-* Programme qui place les nombres paires d<un tableau puis le place en permier et ensuite les nombres impaires
+* Programme qui place les nombres paires d'un tableau puis le place en permier et ensuite les nombres impaires
 * file  ex5.cpp
 * author Luca Zama et David Vo
 * date   25/01/2022
