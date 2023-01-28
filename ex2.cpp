@@ -1,7 +1,7 @@
 /**
 * Programme qui determine la somme d'interet et les mois associés pour un pret avec la somme 
 * \file   ex2.cpp
-* \author Van-Truong Vo
+* \author Van-Truong Vo et Luca Zama
 * \date   22/01/2023
 * Créé le 16 janvier 2008
 */

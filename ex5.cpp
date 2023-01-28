@@ -6,7 +6,7 @@
 */
 #include <iostream>
 using namespace std;
-const int size = 10;
+
 
 //une fonction qui place les nombre pair en premier dans un nouveau tableau
 
@@ -39,7 +39,7 @@ int main(){
     
     const int size = 10;
     int numArray[size];
-    cout << "Entrez 10 elements du tableau : ";
+    cout << "Entrez 10 elements du tableau (ex: 1 2 3 4 5 6 7 8 9 10): ";
     for (int i=0; i < size; i++){
         cin >> numArray[i];
     }

@@ -1,7 +1,7 @@
 /**
 * Programme qui détermine si une année lue du clavier est bissextile.
 * file  ex4.cpp
-* author David Vo
+* author David Vo et Luca Zama
 * date   22/01/2022
 */
 #include <iostream>

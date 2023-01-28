@@ -1,7 +1,7 @@
 /**
 * Programme qui determine si le nombre est premier.
 * file  ex1.cpp
-* author David Vo
+* author David Vo et Luca Zama
 * date   22/01/2022
 */
 #include <iostream>
